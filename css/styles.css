@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  border-bottom: 1px solid black;
+  position:sticky;
+  top:0;
+  width: 100%;
+  z-index: 50;
+  height: 100;
+  background-color:#1f2937 ;
+}
+
+header nav {
+  display:flex ;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color:rgb(21,145,145) ;
+}
+
+
+header ul {
+  display: flex;
+  gap: 1rem
+
+}
+
+header ul li{
+  list-style-type: none;
+
+}
+
+header a{
+  color: white;
+  text-decoration: none;
+
+}
+
+header a:hover{
+  text-decoration: underline;
+  color:rgba(197,12,12,0.938);
+  transition: ease-in-out 0.4s;
+}
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items:center
+  background-color #1f2937;
+  padding: 1rem 1.5rem;
+  position: relative;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li{
+  margin-left: 20px;
+}
+
+.nav link a{
+  color: whitesmoke;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size:large;
+  font-weight: bold;
+
+}
+.nav-links a:hover{
+  color:grey;
+
+}
+
+.logo{
+  font-size: x-large;
+  font-weight: bolder;
+  align-items: center;
+  color: white;
+
+}
+
+/* HERO */
+.hero {
+  background:url("../images/itailian.jpg")no-repeat center/cover;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  margin-top: 10px;
+}
+
+/* SECTION */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* DISHES GRID */
+.dishes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* simple default */
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.dish img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.dish h3 {
+  margin: 10px 0;
+}
+
+/* CTA */
+.cta {
+  background: #c0392b;
+  color: white;
+}
+
+.cta a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: white;
+  color: #c0392b;
+  text-decoration: none;
+}
+
+/* INFO */
+.info {
+  margin-top: 20px;
+}
+
+.info div {
+  margin-bottom: 15px;
+}
+
+/* FOOTER */
+footer {
+  background: #222;
+  color: white;
+  padding: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  
+  /* 1. Navigation Menu */
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .navbar {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  /* 2. Hero Section */
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  /* 3. Featured Dishes Grid */
+  .dishes {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Zai nuna abinci biyu a jere */
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .dish img {
+    width: 100%; /* Hoton zai cika filin da aka ba shi */
+    height: auto;
+    border-radius: 8px;
+  }
+
+  /* 4. Info Section (Location & Hours) */
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  /* 5. CTA Button */
+  .cta a {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+  }
+}
