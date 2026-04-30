@@ -1,0 +1,100 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Arial', sans-serif; color: #333; line-height: 1.6; }
+header {
+  border-bottom: 1px solid black;
+  position:sticky;
+  top:0;
+  width: 100%;
+  z-index: 50;
+  height: 100;
+  background-color:#1f2937 ;
+}
+
+header nav {
+  display:flex ;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color:rgb(21,145,145) ;
+}
+
+
+header ul {
+  display: flex;
+  gap: 1rem
+
+}
+
+header ul li{
+  list-style-type: none;
+
+}
+
+header a{
+  color: white;
+  text-decoration: none;
+
+}
+
+header a:hover{
+  text-decoration: underline;
+  color:rgba(197,12,12,0.938);
+  transition: ease-in-out 0.4s;
+}
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items:center
+  background-color #1f2937;
+  padding: 1rem 1.5rem;
+  position: relative;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li{
+  margin-left: 20px;
+}
+
+.nav link a{
+  color: whitesmoke;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size:large;
+  font-weight: bold;
+
+}
+.nav-links a:hover{
+  color:grey;
+
+}
+
+.logo{
+  font-size: x-large;
+  font-weight: bolder;
+  align-items: center;
+  color: white;
+
+}
+/* Navbar */
+.navbar { display: flex; justify-content: space-between; padding: 1rem 5%; background: #2c3e50; color: white; position: fixed; width: 100%; top: 0; }
+.navbar ul { list-style: none; display: flex; gap: 20px; }
+.navbar a { text-decoration: none; color: white; }
+
+/* Hero */
+.hero { height: 100vh; background: url('coffee.jpg') center/cover; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center; }
+.btn { padding: 10px 20px; background: #e74c3c; color: white; text-decoration: none; border-radius: 5px; margin-top: 15px; }
+
+/* Menu */
+.menu { padding: 50px 5%; text-align: center; }
+.menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px; }
+.menu-item { border: 1px solid #ddd; padding: 20px; border-radius: 5px; }
+
+/* Responsive Media Query */
+@media (max-width: 768px) {
+    .navbar ul { display: none; } /* Simple hiding for mobile */
+}
