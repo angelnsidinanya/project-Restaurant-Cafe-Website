@@ -111,6 +111,10 @@ header a:hover{
 .section-menu {
     padding-inline: 5%;
     padding-block: 6rem;
+    background-image: url(../images/various-food-on-the-table.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .primary-button,
@@ -228,7 +232,9 @@ header a:hover{
 }
 
 .section-menus_card-image{
-    width: 8rem;
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
 }
 
 .section-menus_card-title{
